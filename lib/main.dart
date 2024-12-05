@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-const cardscolor=Color(0XFF1D1E33);
+
+const cardscolor = Color(0XFF1D1E33);
 
 void main() => runApp(BMICalculator());
 
@@ -33,211 +34,122 @@ class _InputPageState extends State<InputPage> {
           child: Row(
             children: [
               Expanded(
-                child:ReusableCard(
-                  cardchild:Column(
-                    children: <Widget>[
-                      Icon(FontAwesomeIcons.mars,
-                      size: 40.0),
-                      SizedBox(
-                        height: 20.0,
-
-                      ),
-                      Text(
-                        'MALE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-
+                child: ReusableCard(
+                    cardchild: Column(
+                      children: <Widget>[
+                        Icon(FontAwesomeIcons.mars, size: 40.0),
+                        SizedBox(
+                          height: 20.0,
                         ),
-                      )
-
-
-
-
-
-                    ],
-
-
-
-
-                  ),
-                  
-                  
-                  
-                  colour:cardscolor),
-
-
-
+                        Text(
+                          'MALE',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    colour: cardscolor),
               ),
               Expanded(
-                child:ReusableCard(
-                  cardchild:Column(
-                    children: <Widget>[
-                      Icon(FontAwesomeIcons.mars,
-                      size: 40.0),
-                      SizedBox(
-                        height: 20.0,
-
-                      ),
-                      Text(
-                        'MALE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-
+                child: ReusableCard(
+                    cardchild: Column(
+                      children: <Widget>[
+                        Icon(FontAwesomeIcons.mars, size: 40.0),
+                        SizedBox(
+                          height: 20.0,
                         ),
-                      )
-
-
-
-
-
-                    ],
-
-
-
-
-                  ),
-                  
-                  
-                  
-                  
-                  colour:cardscolor),
+                        Text(
+                          'MALE',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    colour: cardscolor),
               ),
             ],
           ),
         ),
         Expanded(
-       child:ReusableCard(cardchild:Column(
-                    children: <Widget>[
-                      Icon(FontAwesomeIcons.mars,
-                      size: 40.0),
-                      SizedBox(
-                        height: 20.0,
-
-                      ),
-                      Text(
-                        'MALE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-
-                        ),
-                      )
-
-
-
-
-
-                    ],
-
-
-
-
+          child: ReusableCard(
+              cardchild: Column(
+                children: <Widget>[
+                  Icon(FontAwesomeIcons.mars, size: 40.0),
+                  SizedBox(
+                    height: 20.0,
                   ),
-        
-        
-        
-        
-        colour:cardscolor),
-          
+                  Text(
+                    'MALE',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+              colour: cardscolor),
         ),
         Expanded(
           child: Row(
             children: [
               Expanded(
-                  child:ReusableCard(
-                    cardchild:Column(
-                    children: <Widget>[
-                      Icon(FontAwesomeIcons.mars,
-                      size: 40.0),
-                      SizedBox(
-                        height: 20.0,
-
-                      ),
-                      Text(
-                        'MALE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-
+                child: ReusableCard(
+                    cardchild: Column(
+                      children: <Widget>[
+                        Icon(FontAwesomeIcons.mars, size: 40.0),
+                        SizedBox(
+                          height: 20.0,
                         ),
-                      )
-
-
-
-
-
-                    ],
-
-
-
-
-                  ),
-                    
-                    
-                    
-                    
-                    
-                    
-                    colour:cardscolor),
+                        Text(
+                          'MALE',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    colour: cardscolor),
               ),
               Expanded(
-                child:ReusableCard(cardchild:Column(
-                    children: <Widget>[
-                      Icon(FontAwesomeIcons.mars,
-                      size:40.0),
-                      SizedBox(
-                        height:20.0,
-
-                      ),
-                      Text(
-                        'MALE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.white,
-
+                child: ReusableCard(
+                    cardchild: Column(
+                      children: <Widget>[
+                        Icon(FontAwesomeIcons.mars, size: 40.0),
+                        SizedBox(
+                          height: 20.0,
                         ),
-                      )
-
-
-
-
-
-                    ],
-
-
-
-
-                  ),
-                  
-                  
-                  
-                  
-                  
-                  colour:cardscolor),
-                
-                ),
-              
+                        Text(
+                          'MALE',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    colour: cardscolor),
+              ),
             ],
           ),
         ),
         Container(
           color: Colors.pink,
-          margin:EdgeInsets.only(top: 10),
+          margin: EdgeInsets.only(top: 10),
           width: double.infinity,
           height: 80.0,
-        
-          ),
-
-        
+        ),
       ],
     );
   }
 }
 
 class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.colour,required this.cardchild});
+  ReusableCard({required this.colour, required this.cardchild});
 
   final Color colour;
   final Widget cardchild;
